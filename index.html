@@ -16,66 +16,82 @@
     <meta property="og:url" content="https://leomy1.github.io/" />
     <title>刘明阳｜Agent 开发工程师</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">跳到主要内容</a>
 
     <header class="masthead">
       <div class="container masthead-inner">
-        <a class="site-brand" href="#about" aria-label="返回页面顶部">
+        <a
+          class="site-brand"
+          href="#about"
+          aria-label="返回页面顶部"
+          data-i18n-aria-label="brandAria"
+        >
           <strong>LeoMY1</strong>
           <span>Agent &amp; Scientific AI</span>
         </a>
-        <nav class="site-nav" aria-label="主导航">
-          <a href="#education">教育经历</a>
-          <a href="#projects">项目</a>
-          <a href="#papers">论文</a>
-        </nav>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="navAria">
+            <a href="#education" data-i18n="navEducation">教育经历</a>
+            <a href="#projects" data-i18n="navProjects">项目</a>
+            <a href="#papers" data-i18n="navPapers">论文</a>
+          </nav>
+          <button
+            class="language-toggle"
+            id="language-toggle"
+            type="button"
+            aria-label="切换为英文"
+            title="切换为英文"
+          >EN</button>
+        </div>
       </div>
     </header>
 
     <div class="container page-grid" id="about">
-      <aside class="profile-sidebar" aria-label="个人信息">
+      <aside class="profile-sidebar" aria-label="个人信息" data-i18n-aria-label="profileAria">
         <img
           class="profile-avatar"
           src="https://github.com/LeoMY1.png?size=184"
           alt="刘明阳的 GitHub 头像"
+          data-i18n-alt="avatarAlt"
           width="92"
           height="92"
           decoding="async"
         />
-        <h1>刘明阳</h1>
-        <p class="profile-role">2027 届硕士 · Agent 开发工程师</p>
-        <p class="profile-bio">
+        <h1 data-i18n="profileName">刘明阳</h1>
+        <p class="profile-role" data-i18n="profileRole">2027 届硕士 · Agent 开发工程师</p>
+        <p class="profile-bio" data-i18n="profileBio">
           人工智能硕士在读，关注科学文档智能、Agent 系统、RAG 与计算机视觉，致力于将研究方法实现为可复现、可验证的工程系统。
         </p>
 
         <section class="sidebar-section" aria-labelledby="sidebar-skills-title">
-          <h2 id="sidebar-skills-title">个人技能</h2>
+          <h2 id="sidebar-skills-title" data-i18n="skillsTitle">个人技能</h2>
           <ul class="skill-list">
             <li>
-              <strong>Agent 工程</strong>
+              <strong data-i18n="skillAgentTitle">Agent 工程</strong>
               <span>ReAct · Tool Calling · Plan-Act · Skills · MCP</span>
             </li>
             <li>
-              <strong>科学文档智能</strong>
-              <span>PDF · OCR · 语义分块 · 结构化抽取</span>
+              <strong data-i18n="skillDocumentTitle">科学文档智能</strong>
+              <span data-i18n="skillDocumentDetail">PDF · OCR · 语义分块 · 结构化抽取</span>
             </li>
             <li>
-              <strong>RAG 开发</strong>
-              <span>ChromaDB · 检索优化 · 引用溯源</span>
+              <strong data-i18n="skillRagTitle">RAG 开发</strong>
+              <span data-i18n="skillRagDetail">ChromaDB · 检索优化 · 引用溯源</span>
             </li>
             <li>
-              <strong>计算机视觉</strong>
-              <span>目标检测 · Swin Transformer · 小波融合</span>
+              <strong data-i18n="skillCvTitle">计算机视觉</strong>
+              <span data-i18n="skillCvDetail">目标检测 · Swin Transformer · 小波融合</span>
             </li>
           </ul>
         </section>
 
         <address class="sidebar-section contact-list">
           <div>
-            <span>地址</span>
-            <p>中国，大连</p>
+            <span data-i18n="locationLabel">地址</span>
+            <p data-i18n="locationValue">中国，大连</p>
           </div>
           <div>
             <span>GitHub</span>
@@ -90,16 +106,16 @@
 
       <main class="page-content" id="main-content">
         <section class="content-section" id="education" aria-labelledby="education-title">
-          <h2 id="education-title">教育经历</h2>
+          <h2 id="education-title" data-i18n="educationTitle">教育经历</h2>
 
           <article class="timeline-entry">
             <time>2024.09—2027.06</time>
             <div>
               <div class="education-heading">
-                <h3>大连理工大学</h3>
-                <span>人工智能 · 硕士</span>
+                <h3 data-i18n="dutName">大连理工大学</h3>
+                <span data-i18n="dutDegree">人工智能 · 硕士</span>
               </div>
-              <p>2024—2025、2025—2026 学年一等奖学金</p>
+              <p data-i18n="dutAward">2024—2025、2025—2026 学年一等奖学金</p>
             </div>
           </article>
 
@@ -107,48 +123,48 @@
             <time>2019.09—2023.06</time>
             <div>
               <div class="education-heading">
-                <h3>上海理工大学</h3>
-                <span>智能科学与技术 · 本科</span>
+                <h3 data-i18n="usstName">上海理工大学</h3>
+                <span data-i18n="usstDegree">智能科学与技术 · 本科</span>
               </div>
-              <p>蓝桥杯上海赛区 C/C++ 程序设计大学 B 组二等奖</p>
+              <p data-i18n="usstAward">蓝桥杯上海赛区 C/C++ 程序设计大学 B 组二等奖</p>
             </div>
           </article>
         </section>
 
         <section class="content-section" id="projects" aria-labelledby="projects-title">
-          <h2 id="projects-title">项目</h2>
+          <h2 id="projects-title" data-i18n="projectsTitle">项目</h2>
 
           <article class="project-entry">
             <div class="entry-heading">
               <div>
-                <p class="entry-kicker">独立衍生项目 · 即将开源</p>
+                <p class="entry-kicker" data-i18n="chemistryKicker">独立衍生项目 · 即将开源</p>
                 <h3>Chemistry-Agent</h3>
               </div>
               <span class="entry-status">Agent / Chemistry</span>
             </div>
-            <p>
+            <p data-i18n="chemistryDescription">
               面向药物化学专利的结构化抽取 Agent，支持长文本分块、Formula ID 约束、Markush 证据回查，以及 Excel、SQLite、CSV 分子库导出。
             </p>
-            <ul class="result-list" aria-label="项目结果">
-              <li>30 篇专利、120 个通式完成场景验证</li>
-              <li>角色判定覆盖率 91.7%</li>
-              <li>基团变量提取准确率 92.6%</li>
+            <ul class="result-list" aria-label="项目结果" data-i18n-aria-label="projectResultsAria">
+              <li data-i18n="chemistryResultOne">30 篇专利、120 个通式完成场景验证</li>
+              <li data-i18n="chemistryResultTwo">角色判定覆盖率 91.7%</li>
+              <li data-i18n="chemistryResultThree">基团变量提取准确率 92.6%</li>
             </ul>
-            <span class="project-link project-link-muted">仓库整理中</span>
+            <span class="project-link project-link-muted" data-i18n="repositoryPreparing">仓库整理中</span>
           </article>
 
           <article class="project-entry">
             <div class="entry-heading">
               <div>
-                <p class="entry-kicker">开源工具链贡献</p>
+                <p class="entry-kicker" data-i18n="uniparserKicker">开源工具链贡献</p>
                 <h3>UniParser-Tools</h3>
               </div>
               <span class="entry-status">Python / MCP</span>
             </div>
-            <p>
+            <p data-i18n="uniparserDescription">
               参与文档解析 Agent 工具链建设，主要完成 Agent Skill 标准化、UniParser CLI、MCP 分层重构、PDF2VQA、Translate 与自动化发布能力。
             </p>
-            <ul class="tag-list" aria-label="项目技术标签">
+            <ul class="tag-list" aria-label="项目技术标签" data-i18n-aria-label="projectTagsAria">
               <li>Agent Skill</li>
               <li>CLI</li>
               <li>MCP</li>
@@ -160,23 +176,24 @@
               href="https://github.com/LeoMY1/UniParser-Tools"
               target="_blank"
               rel="noreferrer"
+              data-i18n="viewRepository"
             >查看 GitHub 仓库 ↗</a>
           </article>
         </section>
 
         <section class="content-section" id="papers" aria-labelledby="papers-title">
-          <h2 id="papers-title">论文</h2>
+          <h2 id="papers-title" data-i18n="papersTitle">论文</h2>
 
           <article class="paper-entry">
-            <p class="entry-kicker">第一作者 · ICIC 2026 · CCF-C</p>
+            <p class="entry-kicker" data-i18n="paperKicker">第一作者 · ICIC 2026 · CCF-C</p>
             <h3>
               Frequency-Guided Swin Transformer with Wavelet Fusion for Underwater Small Object Detection
             </h3>
-            <p class="paper-title-cn">频率引导的 Swin Transformer 与小波融合水下小目标检测</p>
-            <p>
+            <p class="paper-title-cn" data-i18n="paperSubtitle">频率引导的 Swin Transformer 与小波融合水下小目标检测</p>
+            <p data-i18n="paperDescription">
               针对水下图像模糊、低对比度导致的小目标细节丢失，引入频率引导的 Swin Transformer 与自适应小波下采样，并在 DUO、UODD、UDD 三个公开数据集上完成验证。
             </p>
-            <ul class="tag-list" aria-label="论文关键词">
+            <ul class="tag-list" aria-label="论文关键词" data-i18n-aria-label="paperTagsAria">
               <li>Underwater Detection</li>
               <li>Swin Transformer</li>
               <li>Wavelet Fusion</li>
@@ -186,6 +203,7 @@
               href="https://github.com/LeoMY1/FGSwin"
               target="_blank"
               rel="noreferrer"
+              data-i18n="viewResearchCode"
             >查看研究代码 ↗</a>
           </article>
         </section>
@@ -194,7 +212,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© 2026 刘明阳</span>
+        <span data-i18n="copyright">© 2026 刘明阳</span>
         <span>Agent · Scientific Documents · Computer Vision</span>
       </div>
     </footer>
