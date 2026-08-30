@@ -122,16 +122,11 @@ a {
 .profile-avatar {
   width: 92px;
   height: 92px;
-  display: grid;
-  place-items: center;
+  display: block;
   border-radius: 50%;
   border: 1px solid #c9d5dc;
-  background: transparent;
-  color: var(--accent);
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: 750;
-  letter-spacing: 0.08em;
+  background: var(--surface);
+  object-fit: cover;
 }
 
 .profile-sidebar h1 {
